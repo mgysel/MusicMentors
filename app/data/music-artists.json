@@ -1,0 +1,19 @@
+[{
+	"name": "Hyroglifics",
+	"style": ["Drum & Bass", "Hip Hop"],
+	"skills": ["Sound Design", "Composition", "Drums"],
+	"price": "$",
+	"img": "images/hyroglifics.jpg"
+}, {
+	"name": "Shlohmo",
+	"style": ["Hip Hop", "R&B"],
+	"skills": ["Composition", "Mixing"],
+	"price": "$$$",
+	"img": "images/shlohmo.jpg"
+}, {
+	"name": "Sonder",
+	"style": ["Hip Hop", "R&B"],
+	"skills": ["Composition", "Vocals", "Mastering"],
+	"price": "$$",
+	"img": "images/sonder.jpg"
+}]

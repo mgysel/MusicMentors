@@ -1,0 +1,127 @@
+/*Background Image*/
+.body {
+    width: 100vw;
+    height: 35vh;
+    background-size: cover;
+    background-image: url("../images/search-artists.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+/*    background-size: cover;*/
+}
+
+/*Nav*/
+.nav-item {
+	color: #fff;
+}
+
+/*Name*/
+.name-text {
+	color: #fdc735;
+}
+
+/*Slogan*/
+.slogan-text {
+	color: #fff;
+}
+
+.slogan-link {
+	color: #fdc735;
+}
+
+
+#rating {
+	margin-left: 4.5%;
+}
+
+.inputs {
+	width: 100%;
+}
+
+/* Each input*/
+.input {
+	vertical-align: middle;
+	text-align-last: center;
+	height: 40px;
+	width: 22%;
+	margin-left: 6px;
+	margin-top: 28px;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #000;
+}
+
+.search {
+	vertical-align: middle;
+/*	text-align-last: center;*/
+	height: 40px;
+	width: 22%;
+	margin-left: 6px;
+	margin-top: 28px;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #000;
+    padding-left: 8px;
+
+}
+
+.search:placeholder {
+
+}
+
+/* Each option of each input*/
+option {
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+/* First option in each input*/
+.first-option {
+    vertical-align: middle;
+}
+
+
+/*MAIN CONTENT
+Entire section div*/
+.main-content {
+	margin: 0 4%;
+}
+
+/*Each restaurant*/
+.ind-artist {
+	margin-top: 30px;
+}
+
+/*Restaurant photo*/
+.artist-photo {
+	width: 220px;
+	height: 180px;
+	object-fit: cover;
+	padding-left: 0;
+	border: 2px solid #666666;
+}
+
+/*Restaurant info*/
+.artist-info {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 15px 15px 5px 15px;
+	margin-bottom: 10px;
+	border: 1px solid #d7d7d7;
+	background-color: #fff;
+	font-weight: bold;
+}
+
+/*Each piece of restaurant input*/
+.artist-input {
+	margin-bottom: 6px;
+	padding: 0px;
+}
+
+.artist-input-item {
+	margin-right: 8px;
+}
+
+/*Restaurant info*/
+.artist-span {
+	width: 100%;
+}

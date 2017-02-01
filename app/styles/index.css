@@ -1,0 +1,185 @@
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fafafa;
+}
+
+/*.body-index {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}*/
+
+/*Background Image*/
+body {
+    background-image: url("../images/index.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/*Nav*/
+/*.nav {
+	height: 70px;
+	display: flex;
+	flex-wrap: wrap;
+	background: #333333;
+	border: 1px solid #000;
+	z-index: 2;
+}
+
+.footer {
+	height: 7%;
+	display: flex;
+	flex-wrap: wrap;
+	background: #333333;
+	border: 1px solid #000;
+	z-index: 2;
+	margin-top: 38.8%;
+}*/
+
+.email-validation {
+	display:none;
+}
+
+.password-validation {
+	display:none;
+}
+
+.signup-login-input {
+	display: flex;
+	flex-wrap: wrap;
+	width: 350px;
+	height: 46px;
+	margin: 5px;
+	border-radius: 6px;
+}
+
+.sign-up-button {
+    display: block;
+    width: 350px;
+    height: 65px;
+    padding-top: 12px;
+    margin-top: 35px;
+    margin-left: calc(50% - 175px);
+    font-size: 18px;
+    background-color: #474747;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 25px;
+}
+
+.sign-up-button:hover {
+    background-color: #282828;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sign-up input {
+	padding-left: 8px;
+	font-size: 16px;
+}
+
+.sign-up input::-webkit-input-placeholder {
+	font-size: 16px;
+}
+
+.label {
+	font-weight: normal;
+}
+
+.login-link {
+	display: inline-block;
+	border: 1px solid black;
+	width: 80px;
+	height: 37px;
+	border-radius: 10px;
+	vertical-align: middle;
+}
+
+.login-sign-up {
+	margin-left: 160vh;
+	margin-top: 20px;
+}
+
+#login-button {
+	margin-left: 6px;
+}
+
+.sign-up-popout {
+	display: none;
+	position: absolute;
+}
+
+.login-popout {
+	display: none;
+	position: absolute;
+}
+
+/*Name*/
+.name-text {
+	color: #fdc735;
+}
+
+/*Slogan*/
+.slogan-text {
+	color: #fff;
+}
+
+.slogan-link {
+	color: #fdc735;
+}
+
+.first-option {
+    color: #7e7e7e;
+}
+
+/*Title*/
+.title {
+	margin-top: 4vh;
+	margin-left: 35vh;
+}
+
+/*Inputs*/
+.inputs {
+	margin-top: 11vh;
+}
+
+select {
+    font-size: 22px;
+    text-align-last: center;
+}
+
+.input option {
+    font-size: 16px;
+}
+
+.search-inputs {
+    width: 350px;
+    height: 55px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/*Search button*/
+.search-button {
+    display: block;
+    width: 350px;
+    height: 65px;
+    padding-top: 12px;
+    margin-top: 35px;
+    margin-left: calc(50% - 175px);
+    background-color: #474747;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 25px;
+}
+
+.search-button:hover {
+    background-color: #282828;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+

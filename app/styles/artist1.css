@@ -1,0 +1,105 @@
+/*// OMNIPOTENT STYLING*/
+html, body {
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #fafafa;
+	overflow-x: hidden;
+}
+
+.nav, .header, .background-image .footer {
+	border: 1px solid black;
+}
+
+label {
+	font-weight: normal;
+}
+
+
+
+
+
+/*// NAV BAR AT TOP*/
+.nav {
+	height: 70px;
+	background: #333333;
+	border: 1px solid #000;
+}
+
+#nav-title {
+	font-color: #fff;
+	z-index: 2;
+}
+
+.footer {
+	height: 7%;
+	display: flex;
+	flex-wrap: wrap;
+	background: #333333;
+	border: 1px solid #000;
+	z-index: 2;
+	margin-top: 38.8%;
+}
+
+/* Artist name*/
+#artist-title-name {
+	margin: 3px 0 0 0;
+}
+
+/* Artist rating*/
+#artist-title-rating {
+	margin: 0 0 2px 0;
+}
+
+/* Artist address*/
+#artist-title-address {
+	margin: 0 0 3px 0;
+}
+
+
+
+
+
+/*// FOOTER*/
+.footers {
+	display: flex;
+	flex-wrap: wrap;
+	z-index: 2;
+	margin-top: 38.8%;
+	height: 7%;
+	border: 1px solid #FFF;
+    background: #3C5A85;
+}
+
+
+
+
+
+/*// RESTAURANT
+// Hyroglifics info - picture, info*/
+#Hyroglifics {
+	margin-left: 6%;
+}
+
+/*// Photo*/
+.artist-photo {
+	object-fit: cover;
+	display: inline-block;
+	width: 220px;
+	height: 180px;
+	padding: 0;
+	margin-top: 65px;
+	border: 2px solid #666666;
+}
+
+/* Artist Info */
+.artist-info {
+	display: inline-block;
+	width: 75%;
+	margin-left: 10px;
+	margin-top: 16px;
+}
+
+td {
+	padding: 10px 20px 1px 2px ;
+	border: 2px solid #666666;
+}
