@@ -1,13 +1,7 @@
-<div class="row full-width body">
-    <nav class="full-width nav my-meetup inputs center-block">
+<div class="body">
+    <nav class="nav inputs">
         <select id="genres" class="input" tabindex="0">
             <option class="first-option" value="Genre" selected>Browse by Genre</option>
-<!--             <option aria-label="0 stars">☆ ☆ ☆ ☆ ☆</option>
-            <option aria-label="1 star">★ ☆ ☆ ☆ ☆</option>
-            <option aria-label="2 stars">★ ★ ☆ ☆ ☆</option>
-            <option aria-label="3 stars">★ ★ ★ ☆ ☆</option>
-            <option aria-label="4 stars">★ ★ ★ ★ ☆</option>
-            <option aria-label="5 stars">★ ★ ★ ★ ★</option> -->
         </select>
         <select id="focus" class="input text-center" tabindex="0">
             <option class="first-option" value="Focus">Browse by Focus</option>
@@ -19,10 +13,9 @@
         <input type="search" class="search first-option" placeholder="Search" ng-model="searchData"></input>
     </nav>
 </div>
-
 <main class="artist-list">
     <div ng-repeat="x in data | filter:searchData">
-        <a ui-sref="{{x.name}}" class="artist centered" id="{{x.name}}">
+        <a ui-sref="{{x.name}}" class="artist" id="{{x.name}}" tabindex="0">
             <div class="col-md-4 ind-artist">
                 <div class="artist-info center-block">
                     <span class="artist-input artist-span col-md-12 text-center name" style="margin-bottom: 3px">{{x.name}}</span><br>
@@ -32,12 +25,12 @@
                     <div class="artist-input artist-span col-md-12 text-center skills" style="margin-bottom: 3px" >
                         <span class="artist-input-item" ng-repeat="skill in x.skills">{{skill}}</span>
                     </div><br>
-                    <img src="{{x.img}}" class="artist-photo artist-input full-width center-block" style="margin-bottom: 15px">
+                    <img src="{{x.img}}" alt="{{x.name}}" class="artist-input artist-photo full-width center-block" style="margin-bottom: 15px">
                 </div>
             </div>
         </a>
     </div>
 </main>
-<div class="row full-width">
-    <footer class="footers navbar-fixed-bottom"></footer>
+<div class="row">
+    <footer class="footer navbar-fixed-bottom"></footer>
 </div>

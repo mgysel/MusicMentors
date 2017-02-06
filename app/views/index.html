@@ -1,99 +1,76 @@
 <div class="body-index">
-    <div class="row full-width">
+    <div class="nav">
         <nav class="nav">
-            <ul class="login-sign-up">
-                <li class="login">
-                    <a class="login-link center-block text-center"  id="sign-up-button">Sign Up</a>
-                    <div class="sign-up-popout">
-                        <form autocomplete="on" class="sign-up">
-                            <label for="fullname" class="label">
-                                <input  id="fullname" class="signup-login-input" type="text" placeholder="Full name" autofocus>
-                            </label><br>
-                            <label for="email" class="label">
-                                <input id="email" class="signup-login-input" type="email" placeholder="Your email address">
-                            </label><br>
-                            <div class="email-validation">
-                                <ul>
-                                    <li id="username-item"><span id="username-check" class="check">&#10006;</span> Contains User Name</li>
-                                    <li id="at-item"><span id="at-check" class="check">&#10006;</span> Contains '@' Symbol</li>
-                                    <li id="domain-item"><span id="domain-check" class="check">&#10006;</span> Contains Domain Name</li>
-                                </ul>
-                            </div>
-                            <label for="password1" class="label">
-                                <input id="password1" class="signup-login-input" type="password" placeholder="Create a password">
-                            </label><br>
-                            <label for="password2" class="label">
-                                <input id="password2" class="signup-login-input" type="password" placeholder="Confirm password">
-                            </label><br>
-                            <div class="password-validation">
-                                <ul>
-                                    <li id="password-length-item"><span id="password-length-check" class="check">&#10006;</span> 10-35 characters long.</li>
-                                    <li id="uppercase-item"><span id="uppercase-check" class="check">&#10006;</span> Contains uppercase letter.</li>
-                                    <li id="lowercase-item"><span id="lowercase-check" class="check">&#10006;</span> Contains lowercase letter.</li>
-                                    <li id="number-item"><span id="number-check" class="check">&#10006;</span> Contains number.</li>
-                                    <li id="symbol-item"><span id="symbol-check" class="check">&#10006;</span> Contains a symbol.</li>
-                                    <li id="match-item"><span id="match-check" class="check">&#10006;</span> Passwords match.</li>
-                                </ul>
-                            </div>
-                            <p id="sign-up-button" class="sign-up-button centered text-center">Sign up for Meetup</p>
-                        </form>
-                    </div>
-                    </div>
-                </li>
-                <li class="login">
-                    <a class="login-link center-block text-center" id="login-button">Log In</a>
-                    <div class="login-popout">
-                        <ul>
-                            <li>
-                                <label for="nav-email-input" class="nav-label label-index" id="nav-label-email">
-                                    <span class="nav-label-email">Email Address:</span><br class="nav-line-break">
-                                    <input id="nav-email-input" placeholder="Email Address" type="email" name="email">
-                                </label>
-                                <label for="nav-password-input" class="nav-label label-index" id="nav-label-password">
-                                    <span class="nav-label-password">Password:</span><br class="nav-line-break">
-                                    <input id="nav-password-input" placeholder="Password" type="password" name="password1">
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+            <div class="signup-login-button" id="sign-up">
+                <button class="signup-login-link text-center"  id="sign-up-button" tabindex="0">Sign Up</button>
+                <div class="sign-up-popout">
+                    <form autocomplete="on" class="signup-login-form" id="signup-form">
+                        <label for="signup-fullname-input" class="label">
+                            <input  id="signup-fullname-input" class="signup-login-input" type="text" placeholder="Full name">
+                        </label><br>
+                        <label for="signup-email-input" class="label">
+                            <input id="signup-email-input" class="signup-login-input" type="email" placeholder="Your email address">
+                        </label><br>
+                        <div class="email-validation">
+                            <ul>
+                                <li id="username-item"><span id="username-check" class="check">&#10006;</span> Contains User Name</li>
+                                <li id="at-item"><span id="at-check" class="check">&#10006;</span> Contains '@' Symbol</li>
+                                <li id="domain-item"><span id="domain-check" class="check">&#10006;</span> Contains Domain Name</li>
+                            </ul>
+                        </div>
+                        <label for="signup-password1-input" class="label">
+                            <input id="signup-password1-input" class="signup-login-input" type="password" placeholder="Create a password">
+                        </label><br>
+                        <label for="signup-password2-input" class="label">
+                            <input id="signup-password2-input" class="signup-login-input" type="password" placeholder="Confirm password">
+                        </label><br>
+                        <div class="password-validation">
+                            <ul>
+                                <li id="password-length-item"><span id="password-length-check" class="check">&#10006;</span> 10-35 characters long.</li>
+                                <li id="uppercase-item"><span id="uppercase-check" class="check">&#10006;</span> Contains uppercase letter.</li>
+                                <li id="lowercase-item"><span id="lowercase-check" class="check">&#10006;</span> Contains lowercase letter.</li>
+                                <li id="number-item"><span id="number-check" class="check">&#10006;</span> Contains number.</li>
+                                <li id="symbol-item"><span id="symbol-check" class="check">&#10006;</span> Contains a symbol.</li>
+                                <li id="match-item"><span id="match-check" class="check">&#10006;</span> Passwords match.</li>
+                            </ul>
+                        </div>
+                        <a ui-sref="searchArtists" class="sign-up-button text-center" id="signup-submit">Sign up</a>
+                    </form>
+                </div>
+            </div>
+            <div class="signup-login-button" id="login">
+                <button class="signup-login-link text-center" id="login-button">Log In</button>
+                <div class="login-popout">
+                    <form autocomplete="on" class="signup-login-form" id="login-form">
+                        <label for="login-email-input" class="label">
+                            <input id="login-email-input" placeholder="Email Address" type="email" class="signup-login-input">
+                        </label><br>
+                        <label for="login-password-input" class="label">
+                            <input id="login-password-input" placeholder="Password" type="password" class="signup-login-input">
+                        </label>
+                        <a ui-sref="searchArtists" class="sign-up-button text-center" id="login-button">Log In</a>
+                    </form>
+                </div>
+            </div>
         </nav>
     </div>
-
-    <div class="row main">
+    <div class="main">
         <section class="title">
             <h1 class="name-text">Music Mentors</h1>
-            <p class="slogan-text">Learn music production from your favorite
-                <a class="slogan-link" href="">music artists.</a>
-            </p>
+            <p class="slogan-text">Learn music production from your <span id="fav-music-artist">favorite music artists.</span></p>
         </section>
         <main class="inputs center-block">
-            <select id="rating" class="input search-inputs text-center center-block" tabindex="0">
-                <option class="first-option" value="Rating" selected>Browse by Genre</option>
-                <option aria-label="0 stars">☆ ☆ ☆ ☆ ☆</option>
-                <option aria-label="1 star">★ ☆ ☆ ☆ ☆</option>
-                <option aria-label="2 stars">★ ★ ☆ ☆ ☆</option>
-                <option aria-label="3 stars">★ ★ ★ ☆ ☆</option>
-                <option aria-label="4 stars">★ ★ ★ ★ ☆</option>
-                <option aria-label="5 stars">★ ★ ★ ★ ★</option>
+            <select id="genres" class="input search-inputs text-center center-block" tabindex="0">
+                <option class="first-option" value="Genre" selected>Browse by Genre</option>
             </select>
-            <select id="price-range" class="input search-inputs text-center center-block" tabindex="0">
-                <option class="first-option" value="Price Range">Browse by Focus</option>
-                <option value="$">$</option>
-                <option value="$$">$$</option>
-                <option value="$$$">$$$</option>
-                <option value="$$$$">$$$$</option>
+            <select id="focus" class="input search-inputs text-center center-block" tabindex="0">
+                <option class="first-option" value="Focus">Browse by Focus</option>
             </select>
-            <select id="nhood" class="input search-inputs text-center center-block" tabindex="0">
-                <option class="first-option" value="Neighborhood">Browse by Price</option>
+            <select id="price" class="input search-inputs text-center center-block" tabindex="0">
+                <option class="first-option" value="Price">Browse by Price</option>
+                <option value="{{x.price}}" ng-repeat="x in data | orderBy : 'price'">{{x.price}}</option>
             </select>
-            <a id="search-music-artists" class="search-button centered text-center" ui-sref="searchArtists">Search Music Artists</a>
+            <a id="search-music-artists" class="search-button text-center" ui-sref="searchArtists">Search Music Artists</a>
         </main>
-    </div>
-
-    <div class="row full-width">
-        <footer class="footer footer-index navbar-fixed-bottom">
-        </footer>
     </div>
 </div>

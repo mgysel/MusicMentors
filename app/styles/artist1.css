@@ -3,15 +3,11 @@ html, body {
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
 	background-color: #fafafa;
-	overflow-x: hidden;
+/*	overflow-x: hidden;*/
 }
 
 .nav, .header, .background-image .footer {
 	border: 1px solid black;
-}
-
-label {
-	font-weight: normal;
 }
 
 
@@ -25,19 +21,33 @@ label {
 	border: 1px solid #000;
 }
 
-#nav-title {
-	font-color: #fff;
+#artist-title-name {
+	padding-top: 10px;
+	color: #fff;
 	z-index: 2;
 }
 
+
+
+
+/*FOOTER*/
 .footer {
-	height: 7%;
 	display: flex;
 	flex-wrap: wrap;
+	height: 7%;
 	background: #333333;
 	border: 1px solid #000;
 	z-index: 2;
 	margin-top: 38.8%;
+}
+
+
+
+
+
+/*MAIN*/
+#hyroglifics {
+	margin-left: 5%;
 }
 
 /* Artist name*/
@@ -45,61 +55,73 @@ label {
 	margin: 3px 0 0 0;
 }
 
-/* Artist rating*/
-#artist-title-rating {
-	margin: 0 0 2px 0;
-}
-
-/* Artist address*/
-#artist-title-address {
-	margin: 0 0 3px 0;
-}
-
-
-
-
-
-/*// FOOTER*/
-.footers {
-	display: flex;
-	flex-wrap: wrap;
-	z-index: 2;
-	margin-top: 38.8%;
-	height: 7%;
-	border: 1px solid #FFF;
-    background: #3C5A85;
-}
-
-
-
-
-
-/*// RESTAURANT
-// Hyroglifics info - picture, info*/
-#Hyroglifics {
-	margin-left: 6%;
-}
-
 /*// Photo*/
 .artist-photo {
 	object-fit: cover;
 	display: inline-block;
+	margin-top: -31vh;
 	width: 220px;
 	height: 180px;
 	padding: 0;
-	margin-top: 65px;
 	border: 2px solid #666666;
 }
 
 /* Artist Info */
 .artist-info {
 	display: inline-block;
-	width: 75%;
-	margin-left: 10px;
 	margin-top: 16px;
+	margin-left: 5%;
+	width: calc(100% - 10% - 220px);
 }
 
 td {
-	padding: 10px 20px 1px 2px ;
+	padding: 15px 15px 1px 2px ;
 	border: 2px solid #666666;
+}
+
+
+
+
+
+/*MEDIA*/
+@media (max-width: 1100px) {
+	.artist-photo {
+		margin-top: -36vh;
+	}
+}
+
+@media (max-width: 895px) {
+	.artist-photo {
+		margin-top: -44vh;
+	}
+}
+
+@media (max-width: 796px) {
+	.artist-photo {
+		margin-top: -52vh;
+	}
+}
+
+@media (max-width: 710px) {
+	#hyroglifics {
+		margin-left: 0;
+	}
+	.artist-photo {
+		display: block;
+		margin: auto;
+		margin-top: 15px;
+		width: 80%;
+		height: 180px;
+	}
+	.artist-info {
+		display: block;
+		margin-left: 2.5%;
+		width: 95%;
+	}
+}
+
+@media (max-width: 420px) {
+	.artist-info {
+		margin-bottom: 65px;
+	}
 }

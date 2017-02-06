@@ -1,71 +1,92 @@
-html, body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #fafafa;
+/*OMNIPOTENT STYLING*/
+* {
+    font-family: 'Open Sans', sans-serif;
 }
 
-/*.body-index {
-  overflow-x: hidden;
-  overflow-y: hidden;
-}*/
+.body-index {
+/*  overflow-x: hidden;
+  overflow-y: hidden;*/
+}
 
 /*Background Image*/
 body {
     background-image: url("../images/index.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+/*    height: 100vh;*/
+    width: 100%;
 }
 
+
+
+
+/*NAV STYLING*/
 /*Nav*/
-/*.nav {
-	height: 70px;
-	display: flex;
-	flex-wrap: wrap;
-	background: #333333;
-	border: 1px solid #000;
-	z-index: 2;
+.nav {
+  margin-top: 20px;
+  margin-left: calc(80% - 180px);
 }
 
-.footer {
-	height: 7%;
-	display: flex;
-	flex-wrap: wrap;
-	background: #333333;
-	border: 1px solid #000;
-	z-index: 2;
-	margin-top: 38.8%;
-}*/
-
-.email-validation {
-	display:none;
+.signup-login-button {
+    display: inline-block;
 }
 
-.password-validation {
-	display:none;
+.signup-login-link {
+    display: inline-block;
+    width: 80px;
+    height: 37px;
+    padding-top: 0px;
+    background-color: rgba(255,255,255,0.2);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #474747;
+}
+
+.signup-login-link:hover {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.6);
 }
 
 .signup-login-input {
-	display: flex;
-	flex-wrap: wrap;
-	width: 350px;
-	height: 46px;
-	margin: 5px;
-	border-radius: 6px;
+  width: 200px;
+  height: 35px;
+  margin: 3px;
+  border-radius: 6px;
+}
+
+.label {
+  font-weight: normal;
+}
+
+.label input {
+  color: #000;
+  padding-left: 5px;
+  font-size: 15px;
+}
+
+/*Sign Up Section*/
+.sign-up-popout {
+  display: none;
+  position: absolute;
+  margin-left: -8px;
+  margin-top: 6px;
 }
 
 .sign-up-button {
     display: block;
-    width: 350px;
-    height: 65px;
-    padding-top: 12px;
-    margin-top: 35px;
-    margin-left: calc(50% - 175px);
-    font-size: 18px;
+    width: 200px;
+    height: 45px;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-left: 9px;
     background-color: #474747;
     color: #fff;
     border: 1px solid black;
     border-radius: 6px;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .sign-up-button:hover {
@@ -75,74 +96,98 @@ body {
     cursor: pointer;
 }
 
-.sign-up input {
-	padding-left: 8px;
-	font-size: 16px;
-}
-
-.sign-up input::-webkit-input-placeholder {
-	font-size: 16px;
-}
-
-.label {
-	font-weight: normal;
-}
-
-.login-link {
-	display: inline-block;
-	border: 1px solid black;
-	width: 80px;
-	height: 37px;
-	border-radius: 10px;
-	vertical-align: middle;
-}
-
-.login-sign-up {
-	margin-left: 160vh;
-	margin-top: 20px;
+/*Log In Section*/
+.login-popout {
+  display: none;
+  position: absolute;
+  margin-left: -92px;
+  margin-top: 6px;
 }
 
 #login-button {
-	margin-left: 6px;
+  margin-left: 6px;
 }
 
-.sign-up-popout {
-	display: none;
-	position: absolute;
+
+
+
+/*VALIDATION*/
+.check {
+  color: #cc0000;
 }
 
-.login-popout {
-	display: none;
-	position: absolute;
+/*Email Validation*/
+.email-validation {
+  display: none;
+  width: 200px;
+  height: 74px;
+  padding: 6px 1px 1px 1px;
+  margin: 5px 5px 10px 9px;
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px; }
+
+.email-validation ul {
+  padding-left: 10px; }
+
+.email-validation li {
+  list-style-type: none; }
+
+/*Password Validation*/
+.password-validation {
+  display: none;
+  width: 200px;
+  margin: 5px 5px 10px 9px;
+  padding: 6px 1px 1px 1px;
+  height: 134px;
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px; }
+
+.password-validation ul {
+  padding-left: 10px;
+}
+
+.password-validation li {
+  list-style-type: none;
+}
+
+
+
+
+/*MAIN*/
+
+/*Title & Slogan*/
+/*Title*/
+.title {
+  margin-top: 4vh;
+  margin-left: 35vh;
 }
 
 /*Name*/
 .name-text {
 	color: #fdc735;
+  font-size: 35px;
 }
 
 /*Slogan*/
 .slogan-text {
 	color: #fff;
+  font-size: 16px;
+}
+
+#fav-music-artist {
+  color: #fdc735;
+  font-weight: bold;
 }
 
 .slogan-link {
 	color: #fdc735;
 }
 
-.first-option {
-    color: #7e7e7e;
-}
-
-/*Title*/
-.title {
-	margin-top: 4vh;
-	margin-left: 35vh;
-}
-
 /*Inputs*/
 .inputs {
-	margin-top: 11vh;
+  margin-top: 11vh;
 }
 
 select {
@@ -159,6 +204,10 @@ select {
     height: 55px;
     margin-bottom: 10px;
     border-radius: 6px;
+}
+
+.first-option {
+    color: #7e7e7e;
 }
 
 /*Search button*/
@@ -183,3 +232,95 @@ select {
     cursor: pointer;
 }
 
+
+
+
+
+/*MEDIA*/
+/*Inputs top margin*/
+@media (max-width: 1050px) {
+  body {
+    height: 100vh;
+  }
+/*  #fav-music-artist {
+    color: #fdc735;;
+  }
+  .title {
+    margin-top: 0vh;
+    margin-left: 20vh;
+  }*/
+}
+
+@media (max-width: 950px) {
+  body {
+    background-position: 50% 50%;
+  }
+  #fav-music-artist {
+    color: #fdc735;
+    font-weight: bold;
+  }
+  .title {
+    margin-top: 0vh;
+    margin-left: 20vh;
+  }
+}
+
+@media (max-width: 850px) {
+  body {
+    background-position: 20% 50%;
+  }
+  .title {
+    margin-left: 19vh;
+  }
+  #fav-music-artist {
+    display: block;
+  }
+  .nav {
+    margin-top: 20px;
+    margin-left: calc((93vw - 166px)/2);
+  }
+  .signup-login-button {
+    margin-left: 0px;
+  }
+
+}
+
+@media (max-width: 750px) {
+  .nav {
+    margin-left: 0px;
+    text-align: center;
+  }
+  .title {
+    margin-left: 0px;
+    text-align: center;
+  }
+  .signup-login-link {
+      background-color: rgba(255,255,255,0.6);
+  }
+
+  .signup-login-link:hover {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.9);
+  }
+}
+
+@media (max-width: 650px) {
+  .nav {
+    margin-top: 10px;
+  }
+  .name-text {
+    margin-top: 10px;
+  }
+}
+
+/*Inputs for mobile*/
+@media (max-width: 440px) {
+  .input {
+      max-width: 92.5%;
+  }
+  #search-music-artists {
+      max-width: 92.5%;
+      margin-left: 3.75%;
+  }
+}
