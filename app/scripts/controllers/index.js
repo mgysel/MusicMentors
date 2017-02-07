@@ -356,4 +356,9 @@ angular.module('musicTutorsApp')
         return false;
       }
     });
+
+    // Push notification
+    $scope.alert = function() {
+      alert("Thank you for signing up!");
+    }
   });
